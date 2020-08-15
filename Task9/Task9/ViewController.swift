@@ -26,5 +26,5 @@ class ViewController: UIViewController {
     
     
 }
-あ
+
 
