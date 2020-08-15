@@ -15,16 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func exit1(segue:UIStoryboardSegue){
-    }
-    @IBAction func exit2(segue:UIStoryboardSegue){
-    }
-    @IBAction func exit3(segue:UIStoryboardSegue){
-    }
-    @IBAction func exit4(segue:UIStoryboardSegue){
-    }
-    
-    
+    //不要な unwind segueを削除
+    @IBAction func exit(segue:UIStoryboardSegue){}
 }
 
 
