@@ -26,20 +26,15 @@ class NextViewController: UIViewController {
     
     @IBAction func selectButton(_ sender: Any) {
         
-        switch (sender as AnyObject).tag {
+     switch (sender as AnyObject).tag {
         case 0:
-            num = 0
-            performSegue(withIdentifier: "Segue1", sender: sender)
+            number(num: 0)
         case 1:
-            num = 1
-            performSegue(withIdentifier: "Segue2", sender: sender)
+            number(num: 1)
         case 2:
-            num = 2
-            performSegue(withIdentifier: "Segue3", sender: sender)
+            number(num: 2)
         case 3:
-            num = 3
-            performSegue(withIdentifier: "Segue4", sender: sender)
-            
+            number(num: 3)
         default:
             break
         }
@@ -50,6 +45,11 @@ class NextViewController: UIViewController {
         VC.label.text = place[num]
     }
     
+        //switchの処理をメソッドにまとめました
+        func number(num: Int){
+        self.num = num
+        performSegue(withIdentifier: "Segue", sender: nil)
+    }
 }
 
 
